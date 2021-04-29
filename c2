@@ -1,0 +1,14 @@
+package com.company;
+
+public class c2 {
+    String a;
+    c2(String lang){
+        a = lang;
+        System.out.println(a +"a number");
+    }
+    public static void main(String[] args){
+        c2 obj1 = new c2("6 is ");
+        c2 obj2 = new c2("5 is");
+        c2 obj3 = new c2("4 is");
+    }
+}
