@@ -1,0 +1,33 @@
+package com.company;
+
+class base{
+    int x;
+    public int getx(){
+        return x;
+    }
+    public void setx(){
+        System.out.println("i am in base class");
+        this.x = 45;
+    }
+}
+class derive extends base{
+    int y;
+    public int gety(){
+        return y;
+    }
+    public void sety(){
+        System.out.println("i am in derive class");
+        this.y = 47;
+    }
+}
+public class i1 {
+    public static void main(String[] args) {
+        base b = new base();
+        derive d = new derive();
+        b.setx();
+        System.out.println("the number is"+ b.getx());
+        d.sety();
+        System.out.println("the number is"+ d.gety());
+
+    }
+}
