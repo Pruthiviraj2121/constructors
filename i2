@@ -1,0 +1,23 @@
+package com.company;
+
+class circle {
+    int r = 4; //r = radius
+    float PI = 3.14f;
+    public float area(){
+        return PI*this.r*this.r;
+    }
+}
+class cylinder extends circle{
+    float h = 3.4f;
+    public float area(){
+        return ((2*PI*this.r*this.h)+(2*PI*this.r*this.r));
+    }
+}
+public class i2 {
+    public static void main(String[] args) {
+        circle c = new circle();
+        cylinder ch = new cylinder();
+        System.out.println(c.area());
+        System.out.println(ch.area());
+    }
+}
