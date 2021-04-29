@@ -1,0 +1,32 @@
+package com.company;
+
+class circle {
+    int r; 
+    float PI = 3.14f;
+    circle(int radius){
+        System.out.println("i am circle class constructor");
+        this.r = radius;
+    }
+    public float area(){
+        return PI*this.r*this.r;
+    }
+}
+class cylinder extends circle{
+    float h;
+    cylinder(float height){
+        super(radius);
+        System.out.println("i am cylinder class constructor");
+        this.h =  height;
+    }
+    public float area(){
+        return ((2*PI*this.r*this.h)+(2*PI*this.r*this.r));
+    }
+}
+public class i2 {
+    public static void main(String[] args) {
+        circle c = new circle(4);
+        cylinder ch = new cylinder(3.4f);
+        System.out.println(c.area());
+        System.out.println(ch.area());
+    }
+}
