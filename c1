@@ -1,0 +1,41 @@
+package com.company;
+
+public class c1 {
+    int a;
+    String name;
+    
+    void show(){
+        System.out.println(a+" "+name);
+    }
+}
+class b{
+    public static void main(String[] args){
+        c1 r = new c1();
+        r.show();
+    }
+}
+
+
+
+
+package com.company;
+
+public class c1 {
+    int a;
+    String name;
+    c1(){
+        a= 79;
+        name = "bruhh";
+    }
+
+    void show(){
+        System.out.println(a+" "+name);
+    }
+}
+class b{
+    public static void main(String[] args){
+        c1 r = new c1();
+        r.show();
+    }
+}
+
